@@ -1,0 +1,67 @@
+name: wishlist
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.15.1 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  pedantic: ^1.11.1
+
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  google_fonts: ^2.1.0
+
+  flutter_lints: ^1.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  uses-material-design: true
+  assets:
+    - google_fonts/
+    - lib/assets/images/
+    - lib/assets/fonts/
+  fonts:
+    - family: Dosis
+      fonts:
+        - asset: lib/assets/fonts/Dosis-VariableFont_wght.ttf
+    - family: HindMadurai
+      fonts:
+        - asset: lib/assets/fonts/HindMadurai-Medium.ttf
+    - family: IstokWeb
+      fonts:
+        - asset: lib/assets/fonts/IstokWeb-Regular.ttf
+    - family: Karla
+      fonts:
+        - asset: lib/assets/fonts/Karla-VariableFont_wght.ttf
+    - family: Murecho
+      fonts:
+        - asset: lib/assets/fonts/Murecho-VariableFont_wght.ttf
+    - family: SonsieOn
+      fonts:
+        - asset: lib/assets/fonts/SonsieOne-Regular.ttf
+    - family: ZenKakuGothicNew
+      fonts:
+        - asset: lib/assets/fonts/ZenKakuGothicNew-Medium.ttf
+    - family: ZillaSlabHighlight
+      fonts:
+        - asset: lib/assets/fonts/ZillaSlabHighlight-Regular.ttf
+    - family: Monoton-Regular
+      fonts:
+        - asset: lib/assets/fonts/Monoton-Regular.ttf
