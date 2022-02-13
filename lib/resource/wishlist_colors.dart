@@ -10,6 +10,8 @@ class WishlistColors {
   // static const redText = Color.fromRGBO(227, 16, 14, 1.0);
   static const whiteText = Colors.white;
   static const blackText = Color.fromRGBO(0, 0, 0, 0.87);
+  static const greyIcon = Color.fromRGBO(111, 116, 111, 1.0);
+
 
   static const buttonText = Color.fromRGBO(45, 65, 73, 1.0);
   static const dotColor = Color(0x8AE8C4C4);

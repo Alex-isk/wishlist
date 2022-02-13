@@ -18,9 +18,10 @@ class _AccountWidgetState extends State<AccountWidget> {
         title: Center(
           child: Text(
             'Login to your account',
-            style: const TextStyle(fontFamily: 'Dosis',
+            style: const TextStyle(
+              // fontFamily: 'Murechob',
               color: WishlistColors.green,
-              fontWeight: FontWeight.w500,
+              fontWeight: FontWeight.w600,
               // letterSpacing: 4, // межбуквенный интервал
               // height: 20,                     // высота строки
               fontSize: 20,

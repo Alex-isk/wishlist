@@ -23,7 +23,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  google_fonts: ^2.1.0
+#  google_fonts: ^2.1.0
 
   flutter_lints: ^1.0.0
 
@@ -47,21 +47,30 @@ flutter:
     - family: IstokWeb
       fonts:
         - asset: lib/assets/fonts/IstokWeb-Regular.ttf
-    - family: Karla
+#    - family: Karla
+#      fonts:
+#        - asset: lib/assets/fonts/Karla-VariableFont_wght.ttf
+    - family: Murechob
       fonts:
-        - asset: lib/assets/fonts/Karla-VariableFont_wght.ttf
-    - family: Murecho
-      fonts:
-        - asset: lib/assets/fonts/Murecho-VariableFont_wght.ttf
+        - asset: lib/assets/fonts/Murecho-Bold.ttf
     - family: SonsieOn
       fonts:
         - asset: lib/assets/fonts/SonsieOne-Regular.ttf
-    - family: ZenKakuGothicNew
-      fonts:
-        - asset: lib/assets/fonts/ZenKakuGothicNew-Medium.ttf
+#    - family: ZenKakuGothicNew
+#      fonts:
+#        - asset: lib/assets/fonts/ZenKakuGothicNew-Medium.ttf
     - family: ZillaSlabHighlight
       fonts:
         - asset: lib/assets/fonts/ZillaSlabHighlight-Regular.ttf
-    - family: Monoton-Regular
+    - family: Zilla
+      fonts:
+        - asset: lib/assets/fonts/ZillaSlabHighlight-Bold.ttf
+    - family: Monoton
       fonts:
         - asset: lib/assets/fonts/Monoton-Regular.ttf
+    - family: Caveat
+      fonts:
+        - asset: lib/assets/fonts/Caveat-Medium.ttf
+    - family: Comfortaa
+      fonts:
+        - asset: lib/assets/fonts/Comfortaa-Medium.ttf

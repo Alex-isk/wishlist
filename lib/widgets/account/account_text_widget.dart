@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:wishlist/resource/wishlist_colors.dart';
 import 'package:wishlist/widgets/account/register_button.dart';
 import 'package:wishlist/widgets/account/verification_email_button.dart';
-
 import 'account_form_widget.dart';
 
 class AccountTextWidget extends StatelessWidget {
@@ -43,8 +42,6 @@ class AccountTextWidget extends StatelessWidget {
               softWrap: true,
               overflow: TextOverflow.clip,
             ),
-
-
             const SizedBox(height: 5),
             RegisterButton(),
             const SizedBox(height: 25),
@@ -64,4 +61,3 @@ class AccountTextWidget extends StatelessWidget {
     );
   }
 }
-

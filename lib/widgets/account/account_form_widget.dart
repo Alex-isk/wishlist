@@ -3,6 +3,7 @@ import 'package:wishlist/resource/wishlist_colors.dart';
 import 'package:wishlist/widgets/account/account_text_style_widget.dart';
 import 'package:wishlist/widgets/account/text_field_widget.dart';
 
+
 class AccountFormWidget extends StatefulWidget {
   const AccountFormWidget({Key? key}) : super(key: key);
 
@@ -11,18 +12,20 @@ class AccountFormWidget extends StatefulWidget {
 }
 
 class _AccountFormWidgetState extends State<AccountFormWidget> {
-  final _loginTextController = TextEditingController();
-  final _passwordTextController = TextEditingController();
-
-  String? errorText = null;
+  final _loginTextController = TextEditingController(text: 'admin');    /// Заполнены поля
+  final _passwordTextController = TextEditingController(text: 'admin');   /// Заполнены поля
+  String? errorText;
+  // String? errorText = null;
 
   void _account() {
     final login = _loginTextController.text;
     final password = _passwordTextController.text;
 
     if (login == 'admin' && password == 'admin') {
-      print('open app');
+      // Navigator.of(context).pushNamed('/main_screen');  /// можно вернутся назад
       errorText = null;
+
+      Navigator.of(context).pushReplacementNamed('/main_screen'); /// без возврата
     } else {
       errorText = "Не верный логин или пароль";
     }
@@ -35,8 +38,6 @@ class _AccountFormWidgetState extends State<AccountFormWidget> {
 
   @override
   Widget build(BuildContext context) {
-
-
     final errorText = this.errorText;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -121,4 +122,3 @@ class _AccountFormWidgetState extends State<AccountFormWidget> {
     );
   }
 }
-
