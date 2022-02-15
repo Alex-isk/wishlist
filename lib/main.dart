@@ -11,22 +11,30 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Wishlist',
+      title: 'My Wishlist',
       theme: ThemeData(
         appBarTheme: AppBarTheme(
-          backgroundColor: WishlistColors.greyText,
+          // backgroundColor: Colors.transparent,
         ),
         bottomNavigationBarTheme: BottomNavigationBarThemeData(
-          backgroundColor: WishlistColors.greyText,
+          backgroundColor: WishlistColors.greenOpacity,
           unselectedItemColor: WishlistColors.greyIcon,
-          selectedItemColor: WishlistColors.green,
+          selectedItemColor: WishlistColors.whiteText,
         ),
-        fontFamily: 'Comfortaa',
+        // fontFamily: 'Comfortaa',///
+        // fontFamily: 'MPLUSRound',///
+        // fontFamily: 'ZenMaruGothic',
+        // fontFamily: 'Zilla',///
+        // fontFamily: 'ZillaSlabHighlight',///
+        // fontFamily: 'SonsieOn',
+        // fontFamily: 'Murechob',  ///
+        fontFamily: 'IstokWeb',
+        // fontFamily: 'Dosis', ///
+        // fontFamily: 'HindMadurai',
       ),
       routes: {
         '/': (context) => AccountWidget(),
@@ -36,3 +44,20 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+
+// child: Theme(
+// data: Theme.of(context)
+//     .copyWith(canvasColor: Colors.transparent),
+// child: BottomNavigationBar(
+// currentIndex: 0,
+// items: [
+// BottomNavigationBarItem(
+// icon: Icon(Icons.home), title: Text('Home')),
+// BottomNavigationBarItem(
+// icon: Icon(Icons.home), title: Text('Home')),
+// BottomNavigationBarItem(
+// icon: Icon(Icons.home), title: Text('Home'))
+// ],
+//

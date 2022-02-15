@@ -74,3 +74,9 @@ flutter:
     - family: Comfortaa
       fonts:
         - asset: lib/assets/fonts/Comfortaa-Medium.ttf
+    - family: MPLUSRound
+      fonts:
+        - asset: lib/assets/fonts/MPLUSRounded1c-Medium.ttf
+    - family: ZenMaruGothic
+      fonts:
+        - asset: lib/assets/fonts/ZenMaruGothic-Medium.ttf
