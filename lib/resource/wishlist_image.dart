@@ -16,7 +16,8 @@ class WishlistImage {
   static const home = 'lib/assets/images/home.png';
   static const toothbrush = 'lib/assets/images/toothbrush.png';
 
-
-
+  static const heaven = 'lib/assets/images/heaven.png';
+  static const statues = 'lib/assets/images/statues.png';
+  static const volvo = 'lib/assets/images/volvo.png';
 
 }

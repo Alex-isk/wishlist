@@ -5,12 +5,14 @@ class WishlistColors {
   WishlistColors._();
 
   static const green = Color.fromRGBO(28, 211, 162, 1);
+  static const greenOpacity3 = Color.fromRGBO(28, 211, 162, 0.788235294117647);
   static const greenOpacity = Color.fromRGBO(28, 211, 162, 0.5529411764705883);
   static const greenOpacity2 = Color.fromRGBO(
       28, 211, 162, 0.050980392156862744);
   static const whiteGreen = Color.fromRGBO(224, 248, 224, 1.0);
 
-
+  static const greyOpacity3 = Color.fromRGBO(111, 116, 111, 0.9215686274509803);
+  static const greyOpacity2 = Color.fromRGBO(47, 61, 48, 0.9098039215686274);
   static const greyOpacity = Color.fromRGBO(33, 48, 54, 0.21568627450980393);
   static const greyText = Color.fromRGBO(33, 48, 54, 1);
   static const redText = Color.fromRGBO(253, 3, 74, 1.0);

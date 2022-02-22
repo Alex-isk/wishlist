@@ -3,6 +3,7 @@ import 'package:wishlist/resource/wishlist_colors.dart';
 import 'package:wishlist/resource/wishlist_image.dart';
 
 class Wish {
+  final int id;
   final String image;
   final String name;
   final String price;
@@ -12,6 +13,7 @@ class Wish {
   // final String url;
 
   const Wish({
+    required this.id,
     required this.image,
     required this.name,
     required this.price,
@@ -24,6 +26,7 @@ class Wish {
 
 final wishes = [
   Wish(
+    id: 1,
     image: WishlistImage.bike,
     name: 'Горный велосипед',
     price: '50 000',
@@ -33,6 +36,7 @@ final wishes = [
     // url:
   ),
   Wish(
+    id: 2,
     image: WishlistImage.photo,
     name: 'photo',
     price: '22 000',
@@ -42,6 +46,7 @@ final wishes = [
     // url:
   ),
   Wish(
+    id: 3,
     image: WishlistImage.auto,
     name: 'Chevrolet Chevelle SS Wagon 1970',
     price: '555 000',
@@ -51,6 +56,7 @@ final wishes = [
     // url: https://www.pinterest.ru/pin/359795457701546376/
   ),
   Wish(
+    id: 4,
     image: WishlistImage.home,
     name: 'home',
     price: '2 000 000',
@@ -60,6 +66,7 @@ final wishes = [
     // url:
   ),
   Wish(
+    id: 5,
     image: WishlistImage.toothbrush ,
     name: 'toothbrush',
     price: '1500',
@@ -69,6 +76,7 @@ final wishes = [
     // url:
   ),
   Wish(
+    id: 6,
     image: WishlistImage.book,
     name: 'хорошая книга',
     price: '1000',
@@ -78,6 +86,7 @@ final wishes = [
     // url:
   ),
   Wish(
+    id: 7,
     image: WishlistImage.denim,
     name: 'denim',
     price: '2500',
@@ -87,63 +96,3 @@ final wishes = [
     // url:
   ),
 ];
-
-// class InfoWishWidget extends StatelessWidget {
-//   final String image;
-//   final String name;
-//   final String info;
-//   // final String url;
-//   final String price;
-//   // final int category;
-//   // final Color color;
-//
-//
-//
-//   const InfoWishWidget({
-//     Key? key,
-//    required this.image,
-//    required this.name,
-//    required this.info,
-//    required this.price,
-//   }) : super(key: key);
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Row(
-//       children: [
-//         Image(
-//           image: AssetImage(image),
-//         ),
-//         SizedBox(width: 5),
-//         Expanded(
-//           child: Column(
-//             crossAxisAlignment: CrossAxisAlignment.start,
-//             children: [
-//               SizedBox(height: 10),
-//               Text(
-//                 name.toUpperCase(),
-//                 maxLines: 1,
-//                 overflow: TextOverflow.ellipsis,
-//                 style: TextStyle(
-//                     fontWeight: FontWeight.bold,
-//                     color: WishlistColors.greyText),
-//               ),
-//               SizedBox(height: 10),
-//               Text(
-//                 price,
-//                 style: TextStyle(color: WishlistColors.greyIcon),
-//               ),
-//               Text(
-//                 info,
-//                 maxLines: 1,
-//                 overflow: TextOverflow.ellipsis,
-//               ),
-//             ],
-//           ),
-//         ),
-//         SizedBox(width: 5),
-//       ],
-//     );
-//   }
-// }
-//
